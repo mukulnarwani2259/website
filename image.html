@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 30px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .image-container {
+            background-color: #ddd;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: 300px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        footer p {
+            font-size: 1rem
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="images.html">IMAGES</a>
+            <a href="food.html">MENU</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <section class="image-gallery">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/236x/00/f3/cb/00f3cb443515c43bbadb522e71fd3636.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/f6/fb/3b/f6fb3b526b001b4a42f059d3fcb18153.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/c5/2d/45/c52d454bf256841ea8934cd3d760d7b1.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/ce/68/2a/ce682a97579081bc5341b10b44ba5709.jpg" alt="Image 4">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/09/e4/ac/09e4acfe3778136b196f0202b45f49d5.jpg" alt="Image 5">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/ff/b8/e8/ffb8e8c94bf6210bf383e050520b00cf.jpg" alt="Image 6">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/e2/1d/e0/e21de0f4122d1926368bcd78cacd6ff6.jpg" alt="Image 7">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/1b/da/ca/1bdaca54b40441bc8a1bccc733e3ca43.jpg" alt="Image 8">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/04/3e/f8/043ef80ed6c4c1ad98be030f1c5afead.jpg" alt="Image 9">
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/21/ba/b6/21bab60254b00dbe38029070f902b64d.jpg" alt="Image 10">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Image Gallery</p>
+    </footer>
+</body>
+</html>
+

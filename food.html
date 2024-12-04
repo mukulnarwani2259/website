@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .menu-header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+        table td.price {
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Menu</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="image.html">IMAGES</a>
+            <a href="food.html">MENU</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <div class="menu-container">
+        <div class="menu-header">Delicious Food Items</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th class="price">Price (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Butter Chicken</td>
+                    <td class="price">₹250</td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td class="price">₹180</td>
+                </tr>
+                <tr>
+                    <td>Masala Dosa</td>
+                    <td class="price">₹120</td>
+                </tr>
+                <tr>
+                    <td>Biryani</td>
+                    <td class="price">₹200</td>
+                </tr>
+                <tr>
+                    <td>Chole Bhature</td>
+                    <td class="price">₹150</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td class="price">₹60</td>
+                </tr>
+                <tr>
+                    <td>Pasta Alfredo</td>
+                    <td class="price">₹220</td>
+                </tr>
+                <tr>
+                    <td>Veg Burger</td>
+                    <td class="price">₹90</td>
+                </tr>
+                <tr>
+                    <td>Ice Cream Sundae</td>
+                    <td class="price">₹100</td>
+                </tr>
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Paneer Kurkure Momos</td>
+                    <td class="price">₹150</td>
+                </tr>
+                <tr>
+                    <td>Manchurian</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Pav Bhaji/td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Grass Hopper</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Mojito</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Mocha Coffee</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Shake</td>
+                    <td class="price">₹200</td>
+                </tr>
+                <tr>
+                    <td>Spring Roll</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Healthy Salad</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Singapori Noodles</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Pork Sandwich/td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Idli Samber</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Maggie</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>House Special Salad</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Cranberry Chicken Salad</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Honeychilly Potato</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>French Fries</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Shrimp Cilantro Wrap</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Turkey  BLAT</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Organic Sirloin Burger</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Chicken Burger</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Twice Baked Beans</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Grilled Asparagus</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Blue Laagon</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Mini Veg roll</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Garlic Bread</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Panner Pops</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Soya Chap</td>
+                    <td class="price">₹300</td>
+                </tr>
+                <tr>
+                    <td>Indian Chai</td>
+                    <td class="price">₹100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 Food Menu</p>
+    </footer>
+</body>
+</html>

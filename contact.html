@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cafe DJOERAGAN</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/736x/0b/f5/50/0bf55033a2c181db8d73d4abf95dbc08.jpg');
+            background-size: cover; /* Makes sure the image covers the entire page */
+            background-position: center center; /* Centers the image */
+            background-attachment: fixed; /* Fixes the background so it doesn't scroll with content */
+            color: white;
+        }
+
+        /* Banner and Navbar Styling */
+        .banner {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.7); /* Dark overlay for better text contrast */
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact form styling */
+        .contact-container {
+            background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+            padding: 50px;
+            color: white;
+            max-width: 800px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-container label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-container textarea {
+            resize: vertical;
+        }
+
+        .contact-container button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+
+        .contact-container button:hover {
+            background-color: #777;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Logo styling */
+        .logo {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner with Navbar -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo" alt="Cafe DJOERAGAN Logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="image.html">IMAGES</a></li>
+                <li><a href="food.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cafe DJOERAGAN. All rights reserved.</p>
+    </footer>
+</body>
+</html>
